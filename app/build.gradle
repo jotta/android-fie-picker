@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+
+    compileSdkVersion 31
+    buildToolsVersion '30.0.2'
+
+    defaultConfig {
+        applicationId "com.example.file.picker"
+        minSdkVersion 21
+        targetSdkVersion 31
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+}
